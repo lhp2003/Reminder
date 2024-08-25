@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 from threading import Thread
 import time
-import winsound  # 用于播放声音
+import winsound
 import ttkbootstrap as ttkb
 from ttkbootstrap.constants import *
 from PIL import Image, ImageTk  # 导入Pillow库用于图像处理
@@ -14,7 +14,7 @@ class ReminderApp:
         self.root.attributes("-topmost", True)  # 确保窗口在最上层
 
         # 加载PNG图片
-        self.original_image = Image.open("robot-8449206_1280-removebg-preview.png")  # 替换为你的PNG图片路径
+        self.original_image = Image.open("robot-8449206_1280-removebg-preview.png")
         self.original_width, self.original_height = self.original_image.size
 
         # 计算图像的新尺寸，保持比例
@@ -89,7 +89,7 @@ class ReminderApp:
 
     def reminder_loop(self):
         while True:
-            time.sleep(20)  # 每20分钟提醒一次
+            time.sleep(1200)  # 每20分钟提醒一次
             self.show_reminder()
 
     def show_reminder(self):
