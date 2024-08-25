@@ -5,7 +5,7 @@ import time
 import winsound
 import ttkbootstrap as ttkb
 from ttkbootstrap.constants import *
-from PIL import Image, ImageTk  # 导入Pillow库用于图像处理
+from PIL import Image, ImageTk 
 
 class ReminderApp:
     def __init__(self, root):
